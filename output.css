@@ -27,6 +27,7 @@
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
@@ -257,6 +258,9 @@
   .mb-\[50px\] {
     margin-bottom: 50px;
   }
+  .mb-\[330px\] {
+    margin-bottom: 330px;
+  }
   .flex {
     display: flex;
   }
@@ -401,10 +405,30 @@
   .rounded-tl-\[60px\] {
     border-top-left-radius: 60px;
   }
+  .rounded-b-\[30px\] {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .rounded-b-\[100px\] {
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  .rounded-b-\[120px\] {
+    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 120px;
+  }
+  .rounded-b-lg {
+    border-bottom-right-radius: var(--radius-lg);
+    border-bottom-left-radius: var(--radius-lg);
+  }
   .rounded-br-\[60px\] {
     border-bottom-right-radius: 60px;
   }
   .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
@@ -431,6 +455,9 @@
   }
   .bg-\[\#B0AA3A\] {
     background-color: #B0AA3A;
+  }
+  .bg-\[\#D5D2A5\] {
+    background-color: #D5D2A5;
   }
   .bg-\[\#E2DFC9\] {
     background-color: #E2DFC9;
@@ -536,6 +563,10 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-\[\#283E5E\] {
     color: #283E5E;
   }
@@ -553,6 +584,9 @@
   }
   .text-\[\#B1A237\] {
     color: #B1A237;
+  }
+  .text-\[\#\] {
+    color: #;
   }
   .text-red-500 {
     color: var(--color-red-500);
@@ -706,6 +740,11 @@
       width: calc(2/3 * 100%);
     }
   }
+  .md\:w-\[40\%\] {
+    @media (width >= 48rem) {
+      width: 40%;
+    }
+  }
   .md\:w-\[50\%\] {
     @media (width >= 48rem) {
       width: 50%;
@@ -744,6 +783,26 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:gap-\[30px\] {
+    @media (width >= 48rem) {
+      gap: 30px;
+    }
+  }
+  .md\:gap-\[40px\] {
+    @media (width >= 48rem) {
+      gap: 40px;
+    }
+  }
+  .md\:p-\[40px\] {
+    @media (width >= 48rem) {
+      padding: 40px;
+    }
+  }
+  .md\:p-\[50px\] {
+    @media (width >= 48rem) {
+      padding: 50px;
     }
   }
   .md\:text-3xl {

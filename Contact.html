@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
     <title>Contact Us</title>
 </head>
@@ -15,7 +16,8 @@
                 <img src="https://cmonwezeandassociates.com.ng/assets/logo-DiDTv1Oe.png" alt="" class="w-[50px]">
 
                 <ul class="font-medium text-[18px] flex items-center gap-8 hidden md:flex ">
-                    <li class="hover:text-[#B0AA3A] transition-colors duration-300"><a href="">About</a></li>
+                    <li class="hover:text-[#B0AA3A] transition-colors duration-300"><a href="./about.html">About</a>
+                    </li>
                     <li class="hover:text-[#B0AA3A] transition-colors duration-300"><a href="#services">Services</a>
                     </li>
                     <li class="hover:text-[#B0AA3A] transition-colors duration-300"><a href="">Contact</a></li>
@@ -255,6 +257,13 @@
 
     </section>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // animation duration in ms
+            once: true     // whether animation should happen only once
+        });
+    </script>
 </body>
 
 </html>
